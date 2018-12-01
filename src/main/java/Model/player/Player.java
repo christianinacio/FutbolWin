@@ -1,11 +1,12 @@
-package player;
+package Model.player;
 
+import Model.Team;
 
 public class Player {
 
     public String name;
     public String lastname;
-    //TODO: team
+    public Team team;
     public int goles;
 
     public Player(String name, String lastname){
@@ -13,6 +14,7 @@ public class Player {
         this.lastname = lastname;
     }
 
+    //Getters
     public String getName() {
         return name;
     }

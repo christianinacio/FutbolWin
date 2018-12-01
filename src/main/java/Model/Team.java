@@ -1,4 +1,6 @@
-import player.Player;
+package Model;
+
+import Model.player.Player;
 
 import java.util.List;
 
@@ -13,6 +15,7 @@ public class Team {
         this.name = name;
     }
 
+    //Getters
     public String getName() {
         return name;
     }
@@ -27,6 +30,21 @@ public class Team {
 
     public int getMatch() {
         return match;
+    }
+
+    //Methods
+    public void win(){
+        this.match ++;
+        this.point += 3;
+    }
+
+    public void draw(){
+        this.match ++;
+        this.point += 1;
+    }
+
+    public void lost(){
+        this.match ++;
     }
 
 
