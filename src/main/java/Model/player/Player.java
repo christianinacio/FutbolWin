@@ -22,4 +22,10 @@ public class Player {
     public String getLastname() {
         return lastname;
     }
+
+    //Methods
+    public void goal(){
+        goles++;
+    }
+
 }
